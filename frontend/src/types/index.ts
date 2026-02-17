@@ -15,9 +15,9 @@ export interface User {
 export interface Stream {
   _id: string;
   title: string;
-  description?: string;
+  description: string;
   streamUrl: string;
-  thumbnailUrl?: string;
+  thumbnailUrl: string;
   isLive: boolean;
   category: string;
   viewerCount: number;
@@ -48,3 +48,4 @@ export interface DashboardStats {
   expiredUsers: number;
   renewalRequests: number;
 }
+

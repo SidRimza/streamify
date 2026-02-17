@@ -65,16 +65,16 @@ export default function AdminDashboard() {
       <div className="min-h-screen bg-gray-50 dark:bg-dark-300">
         <Navbar />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex items-center justify-between mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Admin Dashboard</h1>
-            <div className="flex space-x-3">
-              <Link href="/admin/users" className="btn-secondary flex items-center space-x-2">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+            <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Admin Dashboard</h1>
+            <div className="flex flex-wrap gap-2">
+              <Link href="/admin/users" className="btn-secondary flex items-center space-x-2 text-sm">
                 <FiUsers />
-                <span>Manage Users</span>
+                <span>Users</span>
               </Link>
-              <Link href="/admin/streams" className="btn-primary flex items-center space-x-2">
+              <Link href="/admin/streams" className="btn-primary flex items-center space-x-2 text-sm">
                 <FiTv />
-                <span>Manage Streams</span>
+                <span>Streams</span>
               </Link>
             </div>
           </div>
@@ -207,3 +207,4 @@ export default function AdminDashboard() {
     </ProtectedRoute>
   );
 }
+
